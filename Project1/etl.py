@@ -6,6 +6,18 @@ from sql_queries import *
 
 
 def process_song_file(cur, filepath):
+    
+    """
+    This procedure processes a song file whose filepath has been provided as an arugment.
+    It extracts the song information in order to store it into the songs table.
+    Then it extracts the artist information in order to store it into the artists table.
+
+    INPUTS: 
+    * cur the cursor variable
+    * filepath the file path to the song file
+    """
+        
+        
     # open song file
     df = df = pd.read_json(filepath, lines=True)
 
@@ -19,6 +31,15 @@ def process_song_file(cur, filepath):
 
 
 def process_log_file(cur, filepath):
+    
+    '''
+    This procedure processes the log files and insert data into dimension tables: time and users.
+    INPUTS: 
+    * cur the cursor variable
+    8 filepath: Single log file path, extract details and insert into user, time and songplays table. 
+    '''
+        
+        
     # open log file
     df =  pd.read_json(filepath, lines=True)
 
@@ -62,6 +83,17 @@ def process_log_file(cur, filepath):
 
 
 def process_data(cur, conn, filepath, func):
+    
+    '''
+    This procedure is to process ll data from songs files and all log files. 
+    
+    INPUTS: 
+    * cur the cursor variable
+    * filepath: dataset path to extract all the sub paths
+    * func: function to call and process the data
+    '''
+        
+        
     # get all files matching extension from directory
     all_files = []
     for root, dirs, files in os.walk(filepath):
