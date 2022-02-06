@@ -42,7 +42,7 @@ Run this file to create Fact and Dimensions table.
 
 ## Database Schemas
 
-![image](https://user-images.githubusercontent.com/35266145/152668586-fdf481cf-d447-487d-99a1-083fd2e7c098.png)
+![image](https://user-images.githubusercontent.com/35266145/152668627-10e97c30-19ce-4152-83f8-ba08f2b1a6e8.png)
 
 
 ### Fact table 
