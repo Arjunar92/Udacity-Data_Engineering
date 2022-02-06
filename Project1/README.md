@@ -88,5 +88,7 @@ Run this file to create Fact and Dimensions table.
 ## Pipeline execution. 
 
 Run the below two python file each time before running the pipeline.
--python create_tables.py
--python etl.py
+
+    - python create_tables.py
+
+    - python etl.py
