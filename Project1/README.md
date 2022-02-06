@@ -43,44 +43,44 @@ Run this file to create Fact and Dimensions table.
 ## Database Schemas
 
 ### Fact table 
-songplays
-- songplay_id PRIMARY KEY,
-- start_time timestamp
-- user_id
-- level
-- artist_id
-- song_id
-- session_id
-- location
-- user_agent 
+    songplays
+    - songplay_id PRIMARY KEY,
+    - start_time timestamp
+    - user_id
+    - level
+    - artist_id
+    - song_id
+    - session_id
+    - location
+    - user_agent 
 
 ### Dimension table
-users
-- user_id PRIMARY KEY
-- first_name
-- last_name
-- gender
-- level
+    users
+    - user_id PRIMARY KEY
+    - first_name
+    - last_name
+    - gender
+    - level
 
-songs
-- song_id PRIMARY KEY
-- title
-- artist_id
-- year
-- duration
+    songs
+    - song_id PRIMARY KEY
+    - title
+    - artist_id
+    - year
+    - duration
 
-artists
-- artist_id PRIMARY KEY
-- artist_name
-- artist_location
-- artist_latitude
-- artist_longitude
+    artists
+    - artist_id PRIMARY KEY
+    - artist_name
+    - artist_location
+    - artist_latitude
+    - artist_longitude
 
-time
-- start_time PRIMARY KEY
-- hour
-- day
-- week
-- month
-- year
-- weekday
+    time
+    - start_time PRIMARY KEY
+    - hour
+    - day
+    - week
+    - month
+    - year
+    - weekday
