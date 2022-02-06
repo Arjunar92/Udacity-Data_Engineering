@@ -42,6 +42,9 @@ Run this file to create Fact and Dimensions table.
 
 ## Database Schemas
 
+![image](https://user-images.githubusercontent.com/35266145/152668586-fdf481cf-d447-487d-99a1-083fd2e7c098.png)
+
+
 ### Fact table 
         songplays
         - songplay_id PRIMARY KEY,
